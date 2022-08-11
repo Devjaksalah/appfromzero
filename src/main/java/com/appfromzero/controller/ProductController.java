@@ -4,9 +4,9 @@ package com.appfromzero.controller;
 import com.appfromzero.dto.ProductDTO;
 import com.appfromzero.mapper.ProductMapper;
 import com.appfromzero.service.ProductService;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import model.Product;
+
+import com.appfromzero.model.Product;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,15 +14,16 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@Slf4j
-@RequiredArgsConstructor
+
 
 @RestController
 @RequestMapping("/products")
 public class ProductController
 {
-    private final ProductService productService;
-    private final ProductMapper productMapper;
+    @Autowired
+    ProductService productService;
+    @Autowired
+     ProductMapper productMapper;
 
     @PostMapping
     public ResponseEntity<ProductDTO> create(@RequestBody ProductDTO productDTO)
