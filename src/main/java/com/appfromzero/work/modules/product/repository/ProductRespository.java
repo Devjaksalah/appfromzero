@@ -1,6 +1,7 @@
-package com.appfromzero.repository;
+package com.appfromzero.work.modules.product.repository;
 
-import com.appfromzero.model.Product;
+
+import com.appfromzero.work.modules.product.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

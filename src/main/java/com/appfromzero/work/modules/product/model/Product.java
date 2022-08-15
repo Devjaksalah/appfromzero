@@ -1,7 +1,6 @@
-package com.appfromzero.model;
+package com.appfromzero.work.modules.product.model;
 
 import lombok.Data;
-import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

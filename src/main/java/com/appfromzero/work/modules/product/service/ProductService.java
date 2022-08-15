@@ -1,14 +1,12 @@
-package com.appfromzero.service;
+package com.appfromzero.work.modules.product.service;
 
 
-import com.appfromzero.repository.ProductRespository;
-
-import com.appfromzero.model.Product;
+import com.appfromzero.work.modules.product.model.Product;
+import com.appfromzero.work.modules.product.repository.ProductRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 import java.util.Optional;
+import java.util.List;
 
 @Service
 public class ProductService
